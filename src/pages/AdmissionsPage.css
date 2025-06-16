@@ -1,0 +1,120 @@
+.admissions-timeline-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    position: relative;
+  }
+  
+  .admissions-header h1 {
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  .admissions-header p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-inline: auto;
+  }
+  
+  .timeline-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  .timeline-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: #F5A623;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .timeline-step {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    z-index: 2;
+  }
+  
+  .timeline-step.left {
+    left: 0;
+    text-align: right;
+  }
+  
+  .timeline-step.right {
+    left: 50%;
+    text-align: left;
+  }
+  
+  .timeline-content {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    position: relative;
+  }
+  
+  .timeline-content::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 14px;
+    height: 14px;
+    background-color: #F5A623;
+    border-radius: 50%;
+    z-index: 3;
+  }
+  
+  .timeline-step.left .timeline-content::after {
+    right: -7px;
+  }
+  
+  .timeline-step.right .timeline-content::after {
+    left: -7px;
+  }
+  
+  .step-icon {
+    font-size: 2rem;
+    color: #F5A623;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-content h3 {
+    font-size: 1.3rem;
+    color: #003366;
+    margin-bottom: 6px;
+  }
+  
+  .timeline-content p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .apply-cta {
+    margin-top: 60px;
+  }
+  
+  .apply-button {
+    background-color: #F5A623;
+    color: white;
+    padding: 14px 40px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .apply-button:hover {
+    background-color: #e28e00;
+  }
+  

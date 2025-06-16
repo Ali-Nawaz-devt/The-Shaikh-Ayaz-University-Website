@@ -1,0 +1,108 @@
+.about-full-page {
+    padding: 80px 20px;
+    background-color: #ffffff;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .about-header h1 {
+    font-size: 2.8rem;
+    color: #003366;
+  }
+  
+  .about-header p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+  }
+  
+  .about-description {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .about-description h2 {
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  .about-description p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
+  
+  .about-image-box {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .about-image-box img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-values-section {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .about-values-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #003366;
+  }
+  
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .value-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    font-size: 1.1rem;
+    color: #003366;
+    font-weight: 600;
+  }
+  
+  /* ✅ Responsive */
+  @media (max-width: 768px) {
+    .about-header h1 {
+      font-size: 2rem;
+    }
+  
+    .about-description h2 {
+      font-size: 1.4rem;
+    }
+  
+    .about-description p {
+      font-size: 0.95rem;
+    }
+  
+    .value-card {
+      font-size: 1rem;
+    }
+  }
+  

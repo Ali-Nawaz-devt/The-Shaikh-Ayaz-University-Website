@@ -1,0 +1,171 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-left: -60px;
+  }
+  
+  .logo-img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .logo-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #003366;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #1c1c1c;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #F5A623;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .apply-btn {
+    padding: 8px 20px;
+    background-color: #F5A623;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .apply-btn:hover {
+    background-color: #e28e00;
+  }
+  
+  .admin-btn {
+    padding: 8px 18px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .admin-btn:hover {
+    background-color: #002244;
+  }
+  
+  /* Hamburger icon (mobile only) */
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #003366;
+    cursor: pointer;
+  }
+  
+  /* Responsive: show hamburger, collapse nav */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-right {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background: white;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      display: none;
+    }
+  
+    .nav-right.open {
+      display: flex;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .nav-buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
+  
+    .nav-links li a {
+      font-size: 1.1rem;
+    }
+  }
+
+  /* for logo mobile alignet */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      margin-left: 0;               /* remove left shift */
+      justify-content: center;     /* center content */
+      gap: 8px;                     /* tighter spacing */
+    }
+  
+    .logo-img {
+      height: 52px;                /* smaller logo */
+    }
+  
+    .logo-text {
+      font-size: 1.1rem;
+      white-space: nowrap;        /* keep text in one line */
+    }
+  
+    .navbar-container {
+      padding: 0.8rem 1rem;
+    }
+  }
+  
+  
+  
